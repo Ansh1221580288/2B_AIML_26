@@ -18,10 +18,27 @@ function sum (){
 //   confirm()
 
 
+// function vote(){
+//     let age = (prompt("Enter your age : "))
+//     if(age>=18){
+//         alert("You are eligible for Voting");
+//     }else{
+//         alert("You are not eligible");
+//     }
+// }
+
+
 function vote(){
-    let age = parseInt(prompt("Enter your age : "))
+    let age = (prompt("Enter your age : "))
     if(age>=18){
-        alert("You are eligible for Voting");
+       let c = confirm("Do you want to submit your response");
+       {
+        if(c){
+            alert("Your response is submitted");
+        }else{
+            alert("Thank you !")
+        }
+       }
     }else{
         alert("You are not eligible");
     }
