@@ -119,3 +119,17 @@ bankAccount.displayBalance();
 bankAccount.deposit(5000);
 bankAccount.withdraw(3000);
 bankAccount.displayBalance();
+
+
+const printPattern = (n) => {
+     for(let i = 1; i <= n; i++) {
+        let row = "";
+        for(let j = 1; j <= i; j++) {
+           row += "*";
+        }
+        console.log(row);
+    }
+}
+
+
+printPattern(3);
